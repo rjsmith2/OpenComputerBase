@@ -8,6 +8,10 @@
     "application",
     "openshift"
   ],
+  "scripts":{
+
+
+  },
   "author": {
     "name": "OpenShift",
     "email": "ramr@example.org",
