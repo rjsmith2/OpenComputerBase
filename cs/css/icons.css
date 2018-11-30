@@ -1,0 +1,43 @@
+.micon {
+    background-image: url('../img/icons/metrize_icons_300_20x20.png');
+    /* note backgorund-image is dynamically altered by js. Above is a fallback when JS fails to replace it.*/
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin: 2px 3px 0 0;
+}
+
+
+.micon.maximize {
+    background-position: -214px -218px;
+     
+}
+.micon.close {
+    background-position: -110px -10px;
+}
+.micon.restore {
+    background-position: -240px -217px;
+}
+.micon.windows {
+    background-position: -32px -606px;
+
+}
+.micon.letterA {
+    background-position: 52px -374px;
+
+}
+.micon.photo {
+    background-position: 52px 600px;
+}
+.micon.upper {
+    background-position: 52px 187px;
+}
+.micon.smallPlus {
+    background-position: -6px 161px;
+}
+.micon.twoFiles{
+    background-position:-6px 55px;
+}
+.micon.multiBoxes{
+    background-position:-214px 263px;
+}

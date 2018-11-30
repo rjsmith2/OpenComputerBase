@@ -1,0 +1,357 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+	
+}
+body{
+background-image:url(http://usinagechicoine.com/images/metalBackgroundImg.jpg);
+transition: background-position 0.5s;
+}
+.desktopView{
+    width: 100%;
+    height: 100%;
+	
+	background-size:100% 100%;
+	text-align:center;
+	margin:0px;
+	transition: margin-top 0.5s,margin-left 0.5s;
+}
+
+.iconContainerOnDesktop {
+    position: absolute;
+    border: 1px solid transparent;
+}
+.iconContainerOnDesktopHover {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.iconContainerOnDesktopSelected {
+}
+.iconNameOnDesktop {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    margin-top:-2px;
+    width:100%;
+    background-color:rgba(255,255,255,0.1);
+    padding:0;
+    text-align:center;
+    color:darkblue;
+    font-size:80%;
+
+}
+.iconNameOnDesktop:hover{
+white-space: pre-wrap;
+}
+.iconOnDesktop {
+    background-color: rgba(255,255,255,0.05);
+}
+.windowContainer {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    background-color: rgba(23,54,85,0.9);
+    position: absolute;
+    border: 3px solid white;
+    -moz-border-bottom-colors: #000 #fff #fff black;
+    -moz-border-top-colors: transparent #fff #fff #fff;
+    -moz-border-left-colors: transparent #fff #fff #fff;
+    -moz-border-right-colors: #000 #fff #fff black;
+    opacity:0.8;
+    transition: border 0.2s,background-color 0.2s;
+}
+.windowContainer:not(.windowContainerFocused)>*{
+opacity:0.9;
+}
+.windowContainer:not(.windowContainerFocused){
+   background-color: rgba(0,0,0,0.9);
+    border: 3px solid gray;
+    
+}
+.windowContainerFocused{
+ opacity:1;
+}
+.windowContainer:not(.windowContainerFocused) div.micon{
+   transform: scale(0.7,0.7);
+-ms-transform: scale(0.7,0.7); /* IE 9 */
+-webkit-transform: scale(0.7,0.7); /* Safari and Chrome */
+}
+.windowContainer div.micon{
+   transform:;
+-ms-transform:; /* IE 9 */
+-webkit-transform:; /* Safari and Chrome */
+}
+.windowContainerFocused>.windowTitleContainer{
+background-color: white;
+}
+.windowTitleContainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 25px;
+    background-color: gray;
+    float: left;
+    cursor: default;
+}
+.windowTitleText {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    padding-left: 2px;
+    float: left;
+    max-width: 60%;
+}
+.windowActionCloseButton {
+    width: 16px;
+    display: block;
+    float: right;
+    height: 60%;
+    margin-right: 2px;
+}
+.windowActionMaxButton {
+    width: 16px;
+    display: block;
+    float: right;
+    height: 60%;
+    margin-right: 2px;
+}
+.windowActionContainer {
+    height: 100%;
+    float: right;
+}
+.windowContentContainer {
+    background-color: rgba(255,255,255,0.6);
+    overflow: hidden;
+}
+.windowContentContainer div {
+}
+.loginScreenUIContainer{
+    background-image:url(../lavaTime.png);
+	background-color:black;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+.systemScreenUIContainer{
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+	background-color:rgba(0,0,0,0.2);
+}
+.loginBoxUI{
+ 
+position:fixed;
+  bottom:10%;
+  left:50%;
+  margin-top:-150px; /* this is half the height of your div*/  
+  margin-left:-250px; /*this is half of width of your div*/
+  width:500px;
+  height:300px;
+
+  text-align:center;
+}
+
+.systemBoxUI{
+  background: rgb(20,25,25); /* Old browsers */
+position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-150px; /* this is half the height of your div*/  
+  margin-left:-350px; /*this is half of width of your div*/
+  width:700px;
+  height:300px;
+  border:1px solid gray;
+  box-shadow:0px 0px 5px 2px black;
+}
+.logoBox{
+    background: transparent; 
+    -moz-user-select: none; 
+        -khtml-user-select: none; 
+        -webkit-user-select: none; 
+        -o-user-select: none; 
+        transition: transform 0.5s;\
+		width:128px;
+		height:128px;
+}
+.logoBox:hover{
+
+}
+.logoBox:active{
+
+}
+
+.inputContainerWithField{
+    color:white;
+    margin-top:5px;
+    clear:left;
+    padding:9px;
+    background-color:rgba(50,80,205,0.03);
+}
+.inputContainerWithField:nth-child(2){
+    margin-top:60px;
+}
+.inputContainerWithField span{
+    vertical-align:middle;
+    text-align:right;
+    
+}
+.inputContainerWithField canvas{
+	width:45%;
+	height:25px;
+	
+}
+.inputContainerWithField input{
+    float:right;
+    margin-right:50px;
+	background-color:black;
+	border:1px solid #333;
+	border-radius:5px;
+	font-size:120%;
+	color:white;
+	padding:5px;
+}
+.optionBoxUser{
+    float:right;
+    font-size:12px;
+    margin-right:20px;
+}
+.optionLoginLink{
+ margin:5px;
+ text-decoration:none;
+ color:white;
+ background-color:black;
+}
+
+.systemBox{
+width:169px;height:158px;float:left;border:1px solid white;margin:2px;
+margin-top:10%;
+}
+.systemBox>progress{
+ margin:4px;
+}
+.systemBox >img{
+height:130px;width:100%;
+ display:block;background-color:rgb(150,150,150);
+ opacity:0.3;
+}
+.systemBox:hover >img{
+opacity:1;
+}
+.systemBox>span{
+        font-size:80%;
+        margin-left:5px;
+}
+
+.registerScreenUIContainer{
+    background-color:rgba(20,20,20,0.9);background: rgb(73,155,234); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(73,155,234,1)), color-stop(100%,rgba(32,124,229,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ); /* IE6-9 */
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+.registerBox{
+position:fixed;
+top:20%;
+left:10%;
+max-width:80%;
+border:1px solid blue;
+box-shadow:blue 0px 0px 5px;
+ background-color:rgba(0,0,0,0.5);
+ }
+.registerRowField{
+float:left;
+display:block;
+text-align:center;
+ color:white;
+ padding:5px;
+ margin:5px;
+ background-color:rgba(0,0,0,0.5);
+
+}
+.registerRowField>span{
+    display:block;width:150px;float:left;
+}
+.titleRegisterHeader{
+margin:0;
+    color:white;border-bottom:1px solid white;text-align:center;
+    background-color:rgba(155,155,255,0.3);
+}
+.registerOptionBox{
+display:block;
+clear:left;
+margin-left:50px;
+text-align:center;
+}
+.titleRegisterBackButton{
+float:left;
+}
+.titleSystemHeader{
+	margin:0;
+    color:yellow;
+	border-bottom:1px solid gray;text-align:center;
+    background-color:rgba(10,25,25,0.3);
+}
+.blockIcon{
+	margin:5px;width:64px;height:64px;
+}
+
+.monthPre{
+ color: gray;
+ text-align: center;
+}
+.monthNow{
+ color: blue;
+ text-align: center;
+}
+.dayNow{
+background-color:rgba(255,255,255,0.7);
+ color: #FF0000;
+ text-align: center;
+ font-size:120%;
+ background: linear-gradient(135deg, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%);
+ border-bottom:1px solid gray;
+ border-right:1px solid gray;
+ transform:rotate(3deg);
+}
+.calendar{
+background-color:rgba(255,255,255,0.3);
+}
+.calendar tr{
+}
+.calendar td{
+ width: 40px;
+  font-size:80%;
+}
+.calendar td:hover{
+
+  background-color:white;
+  color:black;
+}
+.monthNow th{
+ background-color: #000000;
+ color: yellow;
+ text-align: center;
+}
+.dayNames td{
+ border-bottom:1px solid black;
+ color: yellow;
+ text-align: center;
+}
