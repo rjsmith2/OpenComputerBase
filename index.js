@@ -1,9 +1,12 @@
+
+
 var ipaddress = '0.0.0.0';
 var port      = 80 //8080;
 ERROROBJECTforJSON={};
 //pastebin run M9T2iHcv
 fs      = require('fs');
-
+test = require('./package.json').scripts.build;
+console.log(test);
 console.log(__dirname);
 /*
 process.on('uncaughtException', function (err) {
